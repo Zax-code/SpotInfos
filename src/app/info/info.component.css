@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+:host h3 {
+  margin: 0;
+  padding: 0;
+}
+
+:host p {
+  margin: 0;
+  padding: 0;
+}

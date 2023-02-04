@@ -1,0 +1,14 @@
+/* connect is a spotify styled button */
+.connect {
+  background-color: #1db954;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+}
+.connect:hover {
+  background-color: #1ed760;
+}

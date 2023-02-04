@@ -1,0 +1,8 @@
+<div *ngFor="let artist of artists" class="artist">
+  <h2>{{artist.name}}</h2>
+  <img src="{{artist.images[0].url}}" alt="{{artist.name}}">
+  <Info title="Genres" [content]="artist.genres.join(' | ')"/>  
+  <Info title="Popularity" [content]="artist.popularity.toString()"/>
+  <Info title="Followers" [content]="artist.followers.total.toString()"/>
+  <a href="{{artist.external_urls.spotify}}">Go to Page</a>
+</div>
