@@ -49,7 +49,7 @@ export class ArtistsComponent implements OnInit {
       'base64'
     );
     const body = new URLSearchParams({
-      redirect_uri: 'http://localhost:4200/',
+      redirect_uri: 'https://spot-infos.vercel.app/',
       grant_type: this.token ? 'refresh_token' : 'authorization_code',
     });
 

@@ -26,7 +26,7 @@ export class HomeComponent {
     const client_id = 'e92b023779e94b9ca4789731695eced1';
     const scope =
       'user-read-currently-playing playlist-read-private playlist-read-collaborative user-follow-read user-read-playback-position user-top-read user-read-recently-played';
-    const redirect_uri = 'http://localhost:4200/';
+    const redirect_uri = 'https://spot-infos.vercel.app/';
     const response_type = 'code';
 
     const params = new URLSearchParams({
