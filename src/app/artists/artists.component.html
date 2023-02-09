@@ -1,5 +1,6 @@
-<div *ngFor="let artist of artists" class="artist">
-  <h2>{{artist.name}}</h2>
+<div *ngFor="let bubble of bubbles" class="bubble" [style]="bubble"></div>
+<div *ngFor="let artist of artists; index as i" class="artist" [ngClass]="{'highlight': i === highlightedIndex}">
+  <h2>{{artist.name}} #{{i+1}}</h2>
   <img src="{{artist.images[0].url}}" alt="{{artist.name}}">
   <Info title="Genres" [content]="artist.genres.join(' | ')"/>  
   <Info title="Popularity" [content]="artist.popularity.toString()"/>

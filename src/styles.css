@@ -1,7 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 body,
 html {
-  background-color: #f5f5f5;
+  /*Beatuiful pastel gradient background*/
+  background: linear-gradient(
+    45deg,
+    #f5f7fa,
+    #c3cfe2,
+    #5d9cec,
+    #f5f7fa,
+    #c3cfe2,
+    #5d9cec
+  );
+  color: #333;
+
   min-height: 100vh;
   margin: 0;
   padding: 0;

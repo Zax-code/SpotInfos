@@ -24,14 +24,22 @@ export class HomeComponent {
     const baseURL = 'https://accounts.spotify.com/authorize?';
     const state = generateRandomString(16);
     const client_id = 'e92b023779e94b9ca4789731695eced1';
-    const scope =
-      'user-read-currently-playing playlist-read-private playlist-read-collaborative user-follow-read user-read-playback-position user-top-read user-read-recently-played';
-    const redirect_uri = 'https://spot-infos.vercel.app/';
+    const scope = [
+      'user-read-currently-playing',
+      'playlist-read-private',
+      'playlist-read-collaborative',
+      'user-follow-read',
+      'user-read-playback-position',
+      'user-top-read',
+      'user-read-recently-played',
+    ];
+    var redirect_uri = 'https://spot-infos.vercel.app/';
+    // redirect_uri = 'http://localhost:4200/';
     const response_type = 'code';
 
     const params = new URLSearchParams({
       client_id,
-      scope,
+      scope: scope.join(' '),
       redirect_uri,
       response_type,
       state,
